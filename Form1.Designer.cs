@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             comboBox1 = new ComboBox();
@@ -38,6 +37,7 @@
             button1 = new Button();
             label5 = new Label();
             comboBox2 = new ComboBox();
+            colorDialog1 = new ColorDialog();
             SuspendLayout();
             // 
             // label1
@@ -48,16 +48,6 @@
             label1.Size = new Size(91, 20);
             label1.TabIndex = 0;
             label1.Text = "Satuan Awal";
-            label1.Click += label1_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(0, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 1;
-            label2.Text = "label2";
             // 
             // label3
             // 
@@ -76,7 +66,6 @@
             label4.Size = new Size(78, 20);
             label4.TabIndex = 3;
             label4.Text = "Nilai Akhir";
-            label4.Click += label4_Click;
             // 
             // comboBox1
             // 
@@ -86,7 +75,6 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(126, 28);
             comboBox1.TabIndex = 4;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // textBox1
             // 
@@ -117,9 +105,9 @@
             label5.AutoSize = true;
             label5.Location = new Point(110, 193);
             label5.Name = "label5";
-            label5.Size = new Size(91, 20);
+            label5.Size = new Size(92, 20);
             label5.TabIndex = 8;
-            label5.Text = "Satuan Awal";
+            label5.Text = "Satuan Akhir";
             // 
             // comboBox2
             // 
@@ -143,7 +131,6 @@
             Controls.Add(comboBox1);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
@@ -154,7 +141,6 @@
         #endregion
 
         private Label label1;
-        private Label label2;
         private Label label3;
         private Label label4;
         private ComboBox comboBox1;
@@ -163,5 +149,6 @@
         private Button button1;
         private Label label5;
         private ComboBox comboBox2;
+        private ColorDialog colorDialog1;
     }
 }
